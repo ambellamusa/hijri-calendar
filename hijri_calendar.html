@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Islamic Calendar</title>
+    <link rel="stylesheet" href="hijri_calendar_styling.css">
+</head>
+<body>
+
+    <!-- Basmalah Section -->
+    <div class="basmalah">
+        <p lang="ar">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description">
+        <p>
+            This website has been created with the aim of reviving the Sunnah of using the Hijri calendar, which is deeply rooted in the Islamic tradition. 
+            Many Muslims today have become accustomed to using the Gregorian calendar, often forgetting the importance of the Islamic calendar. 
+            Here, we will highlight key Islamic months, dates, and events from the Prophetic Sunnah, allowing us to familiarize ourselves with significant moments from our history and strengthen our connection to Islamic times and dates.
+        </p>
+    </div>
+
+    <div class="container">
+        <!-- Left Side: Islamic Calendar Months -->
+        <div class="calendar-container">
+            <h1>Islamic Calendar</h1>
+
+             <!-- Key for symbols -->
+        <div class="calendar-key">
+            <p><span class="symbol">🔴</span> Sacred Month</p>
+            <p><span class="symbol">🌙</span> Ramadan</p>
+            <p><span class="symbol">🕋</span> Hajj Month</p>
+        </div>
+            
+            <!-- Islamic Calendar Months -->
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('muharram-info')">
+                    Muharram (مُحَرَّم) 🔴<span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="muharram-info">
+                    <p>Muharram, meaning "forbidden," is one of the four sacred months in Islam, 
+                        during which fighting and battles were historically prohibited. 
+                        The month holds special significance with the 10th day, known as Ashura, 
+                        which marks the day Allah saved Prophet Musa (Moses) and his people from Pharaoh. 
+                        Fasting on this day is encouraged.</p>
+                </div>
+            </div>
+
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('safar-info')">
+                    Safar (صَفَر) <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="safar-info">
+                    <p>The word Safar means "void" or "empty." 
+                        Pre-Islamic Arabs named it thus because their homes would often be empty during this time as they left to gather food. 
+                        Another account suggests the name relates to the aftermath of battles, 
+                        when victorious tribes would loot their enemies' homes, leaving them empty.</p>
+                </div>
+            </div>
+
+            <!-- Add more months similarly -->
+            <!-- Rabi' al-Awwal -->
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('rabi-awwal-info')">
+                    Rabī' Al-Awwal (رَبِيعُ الأَوَّل) <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="rabi-awwal-info">
+                    <p>Rabi' al-Awwal translates to "the first spring," and refers to a time when pastures would flourish for grazing. 
+                        It is also the month in which the Prophet Muhammad ﷺ was born. 
+                        However, it is important to note that celebrating his birth was not done by the companions, 
+                        as doing so is regarded as an innovation (bid’ah). The name reflects that people stayed settled, 
+                        not traveling during this time.</p>
+                </div>
+            </div>
+
+            <!-- Additional months here -->
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('rabi-thani-info')">
+                    Rabī' Al-Thani (رَبِيعُ الثَّانِي) <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="rabi-thani-info">
+                    <p>Also known as Rabi' al-Akhir (the last spring), 
+                        this month follows Rabi' al-Awwal. The name, "second spring," 
+                        continues the theme of seasonal changes and pasture growth, 
+                        signifying the end of the spring season.</p>
+                </div>
+            </div>
+
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('jumada-awwal-info')">
+                    Jumādá Al-Ūlá (جُمَادَى الأُولَى) <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="jumada-awwal-info">
+                    <p>Jumādá Al-Ūlá, or "the first of parched land," is thought to mark the pre-Islamic summer. 
+                        The name Jumada may relate to either the dry, parched land or to the freezing of water, 
+                        as this time of year can also be associated with cold. The word Jumada can be masculine or feminine, 
+                        with both forms being used.</p>
+                </div>
+            </div>
+    
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('jumada-thani-info')">
+                    Jumada Al-Thaniah (جُمَادَى الثّانِيَة) <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="jumada-thani-info">
+                    <p>Jumada al-Thaniah, also known as Jumada al-Ākhirah, means "the last of the parched land." 
+                        Like Jumada al-Ula, it reflects the climatic conditions during this time, 
+                        emphasizing the dry or frozen nature of the environment.</p>
+                </div>
+            </div>
+    
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('rajab-info')">
+                    Rajab (رَجَب) 🔴<span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="rajab-info">
+                    <p>Rajab comes from the root meaning "to respect" or "venerate." 
+                        It is another sacred month in which fighting was forbidden. 
+                        Pre-Islamic Arabs would remove the heads of their spears to avoid combat. 
+                        The name also implies "removal," reflecting this practice of ceasing hostilities.</p>
+                </div>
+            </div>
+    
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('shaban-info')">
+                    Sha'bān (شعبان) <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="shaban-info">
+                    <p>The word Sha'ban means "scattered" or "dispersed," 
+                        referring to the time when Arab tribes would disperse in search of water or to raid others. 
+                        It is also seen as the month that lies between Rajab and Ramadan, reflecting its intermediary position. 
+                        Some scholars say the name could refer to being "between" two significant months.</p>
+                </div>
+            </div>
+    
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('ramadan-info')">
+                    Ramadan (رَمَضَان) 🌙 <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="ramadan-info">
+                    <p>Ramadan derives from the root word for "intense heat" or "burning," 
+                        symbolizing the spiritual purification that occurs through fasting. 
+                        Another meaning refers to the intense thirst of camels, drawing parallels to the self-restraint of Muslims during the month. 
+                        Ramadan is the month of fasting and includes Laylat al-Qadr, the Night of Decree, one of the holiest nights in Islam.</p>
+                </div>
+            </div>
+    
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('shawwal-info')">
+                    Shawwāl (شَوَّال) <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="shawwal-info">
+                    <p>Shawwāl means "raised," and is often associated with camels lifting their tails during mating season. 
+                        This month follows Ramadan and is marked by the festival of Eid al-Fitr, as well as six recommended fasts.</p>
+                </div>
+            </div>
+    
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('dhu-al-qidah-info')">
+                    Dhūl-Qa'dah (ذُو القَعدَة) 🔴<span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="dhu-al-qidah-info">
+                    <p>Dhūl-Qa'dah The name Dhul-Qi'dah is derived from the word qu‘ood (to sit or rest). 
+                        It is a sacred month in which fighting and traveling were traditionally halted. 
+                        This time was used for rest and peace before the onset of Dhul-Hijjah, the month of pilgrimage.</p>
+                </div>
+            </div>
+    
+            <div class="month">
+                <div class="month-title" onclick="toggleInfo('dhu-al-hijjah-info')">
+                    Dhul-Hijjah (ذُو الحِجَّة) 🔴 🕋<span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="month-info" id="dhu-al-hijjah-info">
+                    <p>Dhul-Hijjah, meaning "the month of pilgrimage," 
+                        is the final month of the Islamic calendar and the month in which the Hajj pilgrimage is performed. 
+                        Key days in this month include the Day of Arafah (9th) and Eid al-Adha (10th). 
+                        It is also a sacred month, where battles are prohibited, making it one of the holiest periods in the year.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Useful Links Section -->
+        <div class="useful-links-container">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=8TXZDWHR4R0">YouTube - Months In Islam (Voice Only)</a></li>
+                <li><a href="https://islamqa.info/amp/en/answers/211395">IslamQA - Hijri Month Names</a></li>
+                <li><a href="https://islamqa.info/en/answers/170242/">IslamQA - Pre-Islamic Arab Calendar</a></li>
+                <li><a href="https://islamqa.info/en/answers/147601/">IslamQA - The Propher's ﷺ Birth And Death</a></li>
+                <li><a href="https://islamqa.info/en/articles/60/is-celebrating-prophets-birthday-allowed-in-islam">IslamQA - Is Celebrating The Propher's ﷺ Birthday Allowed?</a></li>
+                <li><a href="https://thirdofthenight.com/">Get Up For Tahajjud!</a></li>
+                <li><a href="https://www.quran.com/">Quran Online</a></li>
+                <li><a href="https://www.sunnah.com/">Sunnah Resources</a></li>
+
+            </ul>
+
+            <!-- Newsletter Section -->
+            <div class="newsletter-container">
+                <h3>Newsletter</h3>
+                <p>Sign up to receive updates on key Islamic dates and events.</p>
+                <form action="#">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Buy Me a Coffee section -->
+            <div class="support-section">
+                <h3>Support My Work</h3>
+                <p>Your generous donations help keep this website alive and support my journey as a student of knowledge. Thank you for your support!</p>
+                <a href="https://buymeacoffee.com/means2seekilm" target="_blank">
+                    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee button for supporting my work" style="height: 50px; width: auto;">
+                </a>
+            </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

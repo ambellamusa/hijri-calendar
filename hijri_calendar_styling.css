@@ -1,0 +1,293 @@
+/* Basic reset for consistent rendering across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Basmalah styling */
+.basmalah {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    color: #007bff;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.basmalah p {
+    font-style: italic;
+    font-size: 32px; /* Adjust size if needed */
+    color: #007bff;
+    margin: 0;
+}
+
+/* Description styling */
+.description {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.description p {
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+
+/* Main container with two columns */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+/* Calendar container */
+.calendar-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Styling for the key/legend under the Islamic Calendar title */
+.calendar-key {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;  /* Light background for key */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+.calendar-key p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;  /* Text color */
+}
+
+.symbol {
+    font-size: 18px;
+    margin-right: 10px;  /* Space between symbol and text */
+}
+
+
+/* Month styling */
+.month {
+    margin-bottom: 15px;
+}
+
+.month-title {
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month-info {
+    display: none;
+    background-color: #f9f9f9;
+    border-left: 2px solid #007bff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Arrow styling */
+.arrow {
+    font-size: 14px;
+}
+
+/* Useful Links Container */
+.useful-links-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 35%;
+}
+
+/* Useful links title */
+.useful-links-container h2 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+/* List of links */
+.useful-links-container ul {
+    list-style-type: none;
+}
+
+.useful-links-container ul li {
+    margin-bottom: 10px;
+}
+
+.useful-links-container ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.useful-links-container ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Temporarily hide the newsletter section for now */
+.newsletter-container {
+    display: none;
+}
+ 
+/* Newsletter styling */
+.newsletter-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-container h2 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.newsletter-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.newsletter-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-container input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.newsletter-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-container button:hover {
+    background-color: #0056b3;
+}
+
+.support-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.support-section h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.support-section a img {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.support-section img {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Adds spacing below the button */
+}
+
+/* Mobile responsiveness - for screens 768px and smaller */
+@media (max-width: 768px) {
+
+    /* Body adjustments */
+    body {
+        padding: 10px;
+    }
+
+    /* Adjust the container for mobile */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Calendar and useful links stack vertically */
+    .calendar-container,
+    .useful-links-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Make the text slightly smaller for better fit on small screens */
+    h1, h2, h3 {
+        font-size: 18px;
+    }
+
+    /* Adjust month titles and text */
+    .month-title {
+        font-size: 16px;
+    }
+
+    .month-info {
+        font-size: 14px;
+    }
+
+    /* Adjust Basmalah font size for small screens */
+    .basmalah p {
+        font-size: 24px;
+    }
+
+    /* Newsletter input and button fill the screen */
+    .newsletter-container input[type="email"],
+    .newsletter-container button {
+        width: 100%;
+    }
+
+    /* Support section adjustments */
+    .support-section h3 {
+        font-size: 16px;
+    }
+    
+    .support-section a img {
+        height: 40px; /* Slightly reduce the button size for smaller screens */
+    }
+}
