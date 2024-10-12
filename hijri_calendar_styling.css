@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+.parent-container {
+    display: flex;             /* Allows children to be flex items */
+    flex-direction: column;    /* Stacks children vertically */
+    align-items: center;       /* Centers children horizontally */
+    width: 100%;               /* Full width of the viewport */
+    max-width: 1000px;        /* Optional: control max width */
+    margin: 0 auto;           /* Centers the parent container */
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -48,6 +58,82 @@ body {
     line-height: 1.6;
     margin: 0 auto;
 }
+
+.date-container {
+    display: flex; /* Use flexbox to arrange items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    background-color: #f9f9f9; /* Light background color */
+    border: 2px solid #e0d4c5; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    margin: 20px 0; /* Margin above and below */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.date-item {
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold; /* Make text bold */
+    color: #3A3A3A; /* Darker text color for contrast */
+    margin: 0 20px; /* Space between date items */
+    text-align: center; /* Center align text */
+}
+
+.separator {
+    width: 2px; /* Width of the separator */
+    height: 60px; /* Height of the separator */
+    background-color: #e0d4c5; /* Color of the separator */
+}
+
+
+.date-item span {
+    background-color: #cfe2f3; /* Soft blue background */
+    padding: 10px 15px; /* Padding for the span */
+    border-radius: 5px; /* Rounded corners for spans */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.date-item span:hover {
+    background-color: #a7c6ed; /* Darker blue on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.calendar-dropdown {
+    display: none; /* Initially hidden */
+    position: absolute; /* Position as needed */
+    background-color: white; /* Background color */
+    border: 1px solid #ccc; /* Border style */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+
+.calendar-dropdown table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-dropdown th, .calendar-dropdown td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar-dropdown th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.calendar-dropdown .day-name {
+    background-color: #e0e0e0; /* Day names background */
+    font-weight: bold;
+}
+
+.calendar-dropdown .today {
+    background-color: #d1ffd1; /* Highlight today */
+}
+
+
+
 
 /* Dropdown titles */
 .dropdown-title {
