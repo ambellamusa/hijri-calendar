@@ -75,21 +75,7 @@ h1 {
     color: #007bff;
 }
 
-/* Styling for the key/legend under the Islamic Calendar title */
-.calendar-key {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;  /* Light background for key */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
-}
-
-.calendar-key p {
-    margin: 5px 0;
-    font-size: 16px;
-    color: #333;  /* Text color */
-}
-
+/* Styling for the emoji symbols */
 .symbol {
     font-size: 18px;
     margin-right: 10px;  /* Space between symbol and text */
