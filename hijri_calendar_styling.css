@@ -49,6 +49,46 @@ body {
     margin: 0 auto;
 }
 
+/* Dropdown titles */
+.dropdown-title {
+    font-size: 16px;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Dropdown content hidden by default */
+.dropdown-content {
+    display: none;
+    background-color: #fafafa;
+    padding: 10px;
+    margin-top: 5px;
+    border-left: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+/* Arrow styling for dropdowns */
+.dropdown-title .arrow {
+    float: right;
+    font-size: 14px;
+}
+
+/* Show dropdown content when active */
+.dropdown-content.show {
+    display: block;
+}
+
+.month-info, .dropdown-content {
+    display: none;
+}
+
+.month-info.active, .dropdown-content.active {
+    display: block;
+}
+
 
 /* Main container with two columns */
 .container {

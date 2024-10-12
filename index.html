@@ -33,16 +33,34 @@
                 <div class="month-title" onclick="toggleInfo('muharram-info')">
                     Al-Muharram (المُحَرَّم) 🔴<span class="arrow">&#x25BC;</span>
                 </div>
-                <div class="month-info" id="muharram-info">
-                    <p>Al-Muharram, is so called because it is a sacred ("muharram", meaning forbidden) month and is 
-                        one of the four sacred months in Islam, 
-                        during which fighting and battles were historically prohibited. 
-                        The month holds special significance with the 10th day, known as Ashura, 
-                        which marks the day Allah saved Prophet Musa (Moses) and his people from Pharaoh. 
-                        Fasting on this day is encouraged.</p>
+                <div class="month-info" id="muharram-info" style="display:none;">
+                    <p>Al-Muharram is so called because it is a sacred (muharram meaning "forbidden") month
+                    and is one of the four sacred months in Islam.</p>
+            
+                    <!-- Nested Dropdowns -->
+                    <div class="dropdown-title" onclick="toggleNestedInfo('muharram-dates')">
+                        Important Dates<span class="arrow">&#x25BC;</span>
+                    </div>
+                    <div class="dropdown-content" id="muharram-dates" style="display:none;">
+                        <p>Ashura (10th of Muharram)</p>
+                    </div>
+            
+                    <div class="dropdown-title" onclick="toggleNestedInfo('muharram-virtues')">
+                        Virtues of this Month<span class="arrow">&#x25BC;</span>
+                    </div>
+                    <div class="dropdown-content" id="muharram-virtues" style="display:none;">
+                        <p>Fasting on Ashura is highly virtuous.</p>
+                    </div>
+            
+                    <div class="dropdown-title" onclick="toggleNestedInfo('muharram-actions')">
+                        Recommended Actions<span class="arrow">&#x25BC;</span>
+                    </div>
+                    <div class="dropdown-content" id="muharram-actions" style="display:none;">
+                        <p>Fasting on the 9th and 10th of Muharram.</p>
+                    </div>
                 </div>
-            </div>
-
+            </div>            
+            
             <div class="month">
                 <div class="month-title" onclick="toggleInfo('safar-info')">
                     Safar (صَفَر) <span class="arrow">&#x25BC;</span>
@@ -213,6 +231,17 @@
                 element.style.display = "block";
             }
         }
+    
+        function toggleNestedInfo(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
     </script>
+    
+    
 </body>
 </html>
